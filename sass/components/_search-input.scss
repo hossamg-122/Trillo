@@ -1,0 +1,50 @@
+.search {
+  position: relative;
+  flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__input {
+    font-family: inherit;
+    width: 85%;
+font-size: inherit;
+    padding: 0.7rem 2rem;
+    border-radius: 10rem;
+    background-color: var(--color-Grey-light-2);
+    border: none;
+    color: inherit;
+    margin-right: -3.25rem;
+    transition: all 0.3s ease-in-out;
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: var(--color-Grey-light-3);
+    }
+    &::-webkit-input-placeholder{
+        font-size: inherit;
+        color:var(--color-Grey-light-4) 
+    }
+    
+  }
+  &__input:focus + &__button{
+    background-color: var(--color-Grey-light-3);
+  }
+  &__button {
+    background-color: var(--color-Grey-light-2);
+    border: none;
+    cursor: pointer;
+    transition: all .2s;
+    &:focus{
+        outline: none;
+    }
+    &:active{
+        transform: translateY(.1rem);
+    }
+  }
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    // we use fill to change svg colors
+    fill: var(--color-Grey-dark-3)
+  }
+}
