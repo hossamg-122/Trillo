@@ -1,0 +1,53 @@
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-Grey-light-2);
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
+  &__stars {
+    //     flex:1;
+    // we will use margin auto as flex grow will make the element occupy all the space but we want it to take it's width only and the rest is empty space
+    margin-inline-end: auto;
+    display: flex;
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      // we use fill to change svg colors
+      fill: var(--color-Primary-light);
+    }
+  }
+  &__location {
+      display: flex;
+      align-items: center;
+      font-size: 1.2rem;
+     
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+      margin-inline-end: .5rem;
+      // we use fill to change svg colors
+      fill: var(--color-Primary-light);
+    }
+  }
+
+  &__rating {
+    background-color: var(--color-Primary-light);
+    padding: 2rem;
+    margin-inline-start: 3rem;
+    color: #fff;
+    &-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+    }
+    &-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+  }
+}

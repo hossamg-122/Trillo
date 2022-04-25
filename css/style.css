@@ -56,7 +56,7 @@ body {
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-Grey-light-2);
+  border-bottom: 1px solid var(--color-Grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -202,3 +202,74 @@ body {
   text-align: center;
   padding: 2.5rem;
   font-size: 1.2rem; }
+
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    width: 100%;
+    display: block; }
+
+.overview {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-Grey-light-2); }
+  .overview__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem; }
+  .overview__stars {
+    margin-inline-end: auto;
+    display: flex; }
+    .overview__stars-icon {
+      height: 2rem;
+      width: 2rem;
+      fill: var(--color-Primary-light); }
+  .overview__location {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem; }
+    .overview__location-icon {
+      height: 2rem;
+      width: 2rem;
+      margin-inline-end: .5rem;
+      fill: var(--color-Primary-light); }
+  .overview__rating {
+    background-color: var(--color-Primary-light);
+    padding: 2rem;
+    margin-inline-start: 3rem;
+    color: #fff; }
+    .overview__rating-average {
+      font-size: 2.25rem;
+      font-weight: 300; }
+    .overview__rating-count {
+      font-size: .8rem;
+      text-transform: uppercase; }
+
+.btn-inline {
+  border: none;
+  color: var(--color-Primary);
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .25s ease-in-out; }
+  .btn-inline:hover {
+    color: var(--color-gray-dark-1); }
+  .btn-inline:focus {
+    outline: none;
+    animation: pulsate 1s ease-in-out infinite; }
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none; }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 1rem 4rem rgba(0, 0, 0, 0.25); }
+  100% {
+    transform: scale(1);
+    box-shadow: none; } }
